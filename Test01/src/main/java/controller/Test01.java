@@ -10,5 +10,7 @@ public class Test01 {
         System.out.println(a,b);
         HashMap hashMap = new HashMap();
 
+        System.out.println("第一次传输");
+        System.out.println("生产环境第一次测试");
     }
 }
