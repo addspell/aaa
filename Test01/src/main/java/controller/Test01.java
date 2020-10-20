@@ -10,9 +10,10 @@ public class Test01 {
         HashMap<Object, Object> HashMap = new HashMap<>();
         
         int a=22;
+        int b=44;
         if(a>b){
          a=b;
         }
-        int b=44;
+
     }
 }
