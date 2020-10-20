@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="mydiv">
+        文件传输助手
+    </div>
+
+    <script>
+
+
+        let elementById = document.getElementById("mydiv");
+        let inner = elementById.innerText;
+        console.log(inner);
+
+        elementById.innerText="<a>字符串补全</a>";
+        inner = elementById.innerText;
+        console.log(inner);
+
+
+        elementById.innerHTML="<a>字符串补全</a>";
+        console.log(elementById.innerHTML);
+
+        elementById.setAttribute("id",16);
+        elementById.setAttribute("name","jack");
+        elementById.setAttribute("address","湖南");
+
+        let attribute = elementById.getAttribute("id");
+        let attribute1 = elementById.getAttribute("name");
+        let attribute2 = elementById.getAttribute("address");
+        console.log(attribute);
+        console.log(attribute1);
+        console.log(attribute2);
+    </script>
+</body>
+</html>

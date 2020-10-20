@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>13-jq事件绑定</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<input type="button" value="js方式" id="jsBtn"> <br>
+<input type="button" value="jq方式" id="jqBtn"> <br>
+<!--
+    js如何绑定事件
+    1.获得到对象
+    2.通过 对象.on事件=function(){}  绑定事件
+
+    jquery绑定事件 : 注意去掉所有的on
+        jquery对象.事件的名称(function(){ 代码编写的位置 })
+-->
+<script>
+    //js如何绑定事件
+    document.getElementById("jsBtn").onclick = function(){
+        alert("js的点击事件绑定")
+    }
+    //jquery绑定事件
+    $("#jqBtn").click(function(){
+        alert("jq的点击事件绑定")
+    })
+</script>
+</body>
+</html>

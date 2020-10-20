@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>12-dom操作元素</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<ul id="star">
+    <!--<li>马尔扎哈</li>-->
+    <li>古力娜扎</li>
+    <li>迪丽热巴</li>
+    <!--<li>萨瓦迪卡</li>-->
+</ul>
+
+<ul>
+    <!--<li>马尔扎哈</li>-->
+    <li>古力娜扎</li>
+    <li>迪丽热巴</li>
+    <!--<li>萨瓦迪卡</li>-->
+</ul>
+<script>
+    let $star = $('#star'); // 无序列表
+    //用html() 可以操作的
+    // 1.前面添加马尔扎哈
+    //创建li对象  添加即可
+    let liObj = $("<li></li>");
+    liObj.html("马尔扎哈");  //<li>马尔扎哈</li>
+
+    //prepend()  在内容之前追加
+    $star.prepend( liObj );
+
+    // 2.后面添加萨瓦迪卡
+    //append()  在内容之后追加
+    let liObj2 = $("<li></li>").html("萨瓦迪卡");
+    $star.append( liObj2 );
+
+    //liObj3 = liObj2.clone().html("xxxx"); //复制一个对象  clone
+    //$star.append( liObj3 );
+
+
+    // 3.移出所有列表项   他杀   empty() 清空  不删除本身元素
+    //$star.empty();
+    //$star.html(""); // 重新覆盖标签体的内容
+
+    // 4.删除无序列表  自杀   remove();  将父元素及其子元素内容全部删除
+    //$star.remove();
+</script>
+</body>
+</html>

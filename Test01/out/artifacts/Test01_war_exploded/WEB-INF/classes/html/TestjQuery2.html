@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>05-层级关系选择器</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<div id="kangxi">
+    <span>儿子：雍正</span>
+    <p>
+        <span>孙子：乾隆</span>
+    </p>
+</div>
+<div>牛顿</div>
+<a href="">传智播客</a>
+<span>黑马程序员</span>
+<script>
+    //页面加载
+    $(function(){
+        // 1. 获取所有的a,span的文本  并集选择器
+        let arrs = $("a,span");
+        console.log(   $("a,span")   );
+
+        //循环出来的都是js原生的对象
+        for (let i = 0; i <arrs.length ; i++) {
+            //console.log(arrs[i].innerHTML);
+            console.log($(arrs[i]).html());
+        }
+
+        // 2. 获取div的后代span的文本
+        //空格表示的是子孙后代
+        console.log($("div span"));
+        console.log($("#kangxi span"));
+        // > 表示的是 子元素(只有一层)
+        console.log(   $("#kangxi>span").html()  );
+
+    })
+</script>
+</body>
+</html>

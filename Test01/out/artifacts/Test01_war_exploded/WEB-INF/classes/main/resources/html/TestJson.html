@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>02-JSON格式转换</title>
+
+</head>
+<body>
+<script>
+    //1. JSON.stringify(object) 把json对象转为字符串
+    let jsObj = { "username" :"张三丰" , "sex": "男" , "age" :18 };
+    let jsString = JSON.stringify(jsObj);
+    console.log(jsString);
+
+
+    //2. JSON.parse(string) 把字符串转为json对象(重点)
+    let userStr = '{ "username" :"张三丰" , "sex": "男" , "age" :18 }';//此字符串是C语言给js的
+    //在js中就需要使用这个json字符串  parse 解析
+    let user = JSON.parse(userStr);
+    alert(user.username)
+
+</script>
+</body>
+</html>

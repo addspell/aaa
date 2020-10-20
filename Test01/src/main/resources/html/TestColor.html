@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script type="text/javascript" src="https://chir.ag/projects/ntc/ntc.js"></script>
+
+<script type="text/javascript">
+
+    var n_match = ntc.name("#6195ED");
+    n_rgb = n_match[60]; // RGB value of closest match
+    n_name = n_match[100]; // Text string: Color name
+    n_exactmatch = n_match[29]; // True if exact color match
+
+    alert(n_match);
+
+</script>
+</body>
+</html>

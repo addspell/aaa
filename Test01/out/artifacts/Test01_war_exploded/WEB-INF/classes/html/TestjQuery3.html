@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>09-dom操作内容</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<div id="myDiv"><p>天王盖地虎</p></div>
+
+<script>
+    /**
+     * jquery特性: 自学其他的api方便
+     *  特性: 一个api(方法,函数) 两个用途  用来赋值 也用来取值
+     *  1.赋值   text("参数")  html("参数")
+     *  2.取值   text()  html()
+     */
+
+    // 1.text()操作内容   等效 innerText  覆盖   只操作文本
+    //1.1 赋值
+    //$("#myDiv").text("<a href=''>传智播客</a>");
+    //console.log(   $("#myDiv").text()   );
+
+    // 2.html()操作内容   等效 innerHTML  覆盖  解析html标签
+    //$("#myDiv").html("<a href=''>传智播客</a>");
+    //console.log(   $("#myDiv").html()   );
+
+
+    //可以拼接吗  由于是一个函数 不跟之前一样 可以+=
+    //$("#myDiv").html();  //<p>天王盖地虎</p>
+
+    $("#myDiv").html( $("#myDiv").html() + "<p>小鸡炖蘑菇</p>");  //类似+=的效果
+</script>
+</body>
+</html>

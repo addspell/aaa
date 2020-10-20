@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #ID{
+            color: aqua;
+        }
+        p{
+            color: #ff2637;
+        }
+        .Class{
+            color: blue;
+        }
+        div a{
+            color: chartreuse;
+        }
+        
+        a[title]{
+            font-size: 50px;
+        }
+        body{
+            background-image: url("google.png");
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            border: 1px solid red;
+            text-align: center;
+            float: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="ID">id选择器</div>
+    <p>元素(标签)选择器</p>
+    <span class="Class">类选择器</span>
+
+    <div>
+        <a title="属性选择器">属性选择器</a>
+    </div>
+
+    <div class="box" id="long">1</div>
+    <div class="box" id="hu">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+
+    <input id="Input" value="输入框1" onmouseup="change()">
+    <input id="Inputs" value="输入框2">
+
+</body>
+<script>
+    let stu=new Object();
+    stu.id=1;
+    stu.name="bob";
+    stu.age=19;
+    console.log(stu);
+    let tea={"id":2,"name":"jack","age":26};
+    console.log(tea);
+    let price=25;
+    let name="张三";
+    let tempStr2 = `这是一段文本,商品的价格为:${price} , 商品的名称为:${name},还有其他内容 `;
+    console.log(tempStr2);
+
+    let uri="搜狗输入法";
+    var uri1 = encodeURI(uri);
+    console.log(uri1);
+    var s = decodeURI(uri1);
+    console.log(s);
+
+    let date = new Date();
+    let string = new String(date.getMonth());
+    console.log(string);
+    let month=string.padStart(2,"0");
+    console.log(month);
+    function change(){
+        var input = document.getElementById("Inputs");
+        input.onclick=function (){
+            input.value="";
+        }
+        let str="嘿哈";
+        input.value+=str;
+    }
+</script>
+</html>

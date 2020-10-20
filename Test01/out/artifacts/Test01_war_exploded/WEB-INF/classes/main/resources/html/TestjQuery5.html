@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>07-过滤选择器</title>
+    <script src="../js/jquery-3.2.1.js"></script>
+</head>
+<body>
+<ul>
+    <li>大娃（红娃）</li>
+    <li>二娃（橙娃）</li>
+    <li>三娃（黄娃）</li>
+    <li>四娃（绿娃）</li>
+    <li>五娃（青娃）</li>
+    <li>六娃（蓝娃）</li>
+    <li>七娃（紫娃）</li>
+</ul>
+
+<script>
+    // 1.获取第一个元素  在一组元素中继续筛选-> 过滤选择器 :单词
+    console.log(   $("li:first").html()   );
+    console.log(   $("li:last").html()   );
+    // 2.获取偶数索引元素  odd 奇数  even偶数
+    console.log(  $("li:even")   );
+
+    // 3.获取指定索引2的元素   "".equlas(变量) -> java语法
+    console.log(  $("li:eq(2)").html()   );
+    console.log(  $("li:gt(2)")  ); // 大于
+    console.log(  $("li:lt(2)")   );//小于
+
+</script>
+</body>
+</html>
