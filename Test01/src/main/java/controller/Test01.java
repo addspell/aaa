@@ -9,6 +9,6 @@ public class Test01 {
     public static void main(String[] args) {
         HashMap<Object, Object> HashMap = new HashMap<>();
         int a=10;
-
+        int b=33;
     }
 }
