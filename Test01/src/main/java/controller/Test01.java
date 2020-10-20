@@ -13,11 +13,6 @@ public class Test01 {
         if(b>a){
             a=b;
         }
-        System.out.println(a,b);
-        HashMap<Object, Object> HashMap = new HashMap<>();
-        HashMap.put("1","测试1");
-        HashMap.put("2","测试2");
-        HashMap.put("2","测试2");
 
     }
 }
