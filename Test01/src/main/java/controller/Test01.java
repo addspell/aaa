@@ -9,9 +9,9 @@ public class Test01 {
     public static void main(String[] args) {
         System.out.println(a,b);
         HashMap<Object, Object> HashMap = new HashMap<>();
-        HashMap.put("1","测试1");
-        HashMap.put("2","测试2");
-        HashMap.put("2","测试2");
+        int a=10;
+        int b=20;
+        
 
     }
 }
