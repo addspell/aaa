@@ -9,7 +9,7 @@ public class Test01 {
     public static void main(String[] args) {
         HashMap<Object, Object> HashMap = new HashMap<>();
         int a=10;
-        int b=30;
+        int b=19;
         System.out.println("测试git");
         System.out.println("测试git");
         System.out.println("测试git");
