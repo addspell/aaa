@@ -11,5 +11,8 @@ public class Test01 {
         int a=10;
         int b=30;
         System.out.println("测试git");
+        System.out.println("测试git");
+        System.out.println("测试git");
+
     }
 }
