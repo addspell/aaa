@@ -10,8 +10,8 @@ public class Test01 {
         HashMap<Object, Object> HashMap = new HashMap<>();
         int a=10;
         int b=c+a;
-        int c=30;
-        int d=40;
-        int e=45;
+        System.out.println("奇怪的提交");
+        System.out.println("奇怪的提交");
+        System.out.println("奇怪的提交");
     }
 }
