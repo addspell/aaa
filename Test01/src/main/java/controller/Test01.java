@@ -10,5 +10,6 @@ public class Test01 {
         HashMap<Object, Object> HashMap = new HashMap<>();
         int a=10;
         int b=c+a;
+        System.out.println("测试git");
     }
 }
