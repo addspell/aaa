@@ -11,5 +11,7 @@ public class Test01 {
         int a=10;
         int b=c+a;
         int c=30;
+        int d=40;
+        int e=45;
     }
 }
