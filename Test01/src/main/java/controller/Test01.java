@@ -10,7 +10,5 @@ public class Test01 {
         HashMap<Object, Object> HashMap = new HashMap<>();
         int a=10;
         int b=d-c;
-        int c=a+b;
-        int d=c+20;
     }
 }
