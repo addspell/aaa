@@ -1,5 +1,6 @@
 <script type="text/javascript">
     function STARTTIME_DFormater(value, row, index){
+
         var fmt = "yyyy年MM月dd日";
         var date = new Date();
         date.setTime(value);
