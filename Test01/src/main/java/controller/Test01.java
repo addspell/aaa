@@ -11,7 +11,7 @@ public class Test01 {
         int a=10;
         int b=a+10;
         System.out.println("测试git");
-        System.out.println("哈哈哈哈");
+        System.out.println("开始测试git合并");
         
     }
 }
