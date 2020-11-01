@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    function dealNull(type){
+    function dealNull456(type){
         if(type==1){
             alert("您还没有给改按钮添加事件！");
         }else{
