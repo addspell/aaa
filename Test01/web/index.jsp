@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  欢迎来到web项目，笑到最后1
+  欢迎来到web项目，笑到最后2
   </body>
 </html>
